@@ -159,3 +159,57 @@ body > footer {
 footer a {
     background-color: var(--yellow)
 }
+/*
+Resources:
+
+W3Schools. (n.d.). CSS padding. 
+https://www.w3schools.com/css/css_padding.asp
+
+W3Schools. (n.d.). CSS variables. 
+https://www.w3schools.com/css/css3_variables.asp
+
+Interneting Is Hard. (n.d.). Advanced positioning. 
+https://internetingishard.netlify.app/html-and-css/advanced-positioning/
+
+W3Schools. (n.d.). CSS position. 
+https://www.w3schools.com/css/css_position.asp
+
+MDN contributors. (2026, July 26). position CSS property. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position
+
+MDN contributors. (2026, July 21). z-index CSS property. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+
+W3Schools. (n.d.). CSS the display property. 
+https://www.w3schools.com/css/css_display.asp
+
+MDN contributors. (2026, September 21). display CSS property. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display
+
+W3Schools. (n.d.). CSS display property. 
+https://www.w3schools.com/cssref/pr_class_display.php
+
+MDN contributors. (2026, September 10). visibility CSS property. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/visibility
+
+/Sharkie/. (2019, December 20). The short and long of CSS Flexbox child properties. DEV Community. 
+https://dev.to/justsharkie/the-short-and-long-of-css-flexbox-child-properties-3ij
+
+W3Schools. (n.d.). CSS margin. 
+https://www.w3schools.com/css/css_margin.asp
+
+W3Schools. (n.d.). CSS borders. 
+https://www.w3schools.com/css/css_border.asp
+
+W3Schools. (n.d.). CSS units. 
+https://www.w3schools.com/cssref/css_units.php
+
+MDN contributors. (2026, April 17). ::before CSS pseudo-element. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::before
+
+W3Schools. (n.d.). CSS grid-template-columns property. 
+https://www.w3schools.com/cssref/pr_grid-template-columns.php
+
+MDN contributors. (2026, August 11). grid-template-columns CSS property. MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns
+*/
