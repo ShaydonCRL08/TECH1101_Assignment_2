@@ -42,14 +42,23 @@ nav ul {
 
 /*The Banner*/
 main header {
+    position: relative;
+    isolation: isolate;
     align-items: center;
-    background: #17242c url("./images/talking_heads-speaking_in_tongues.png") center / cover no-repeat;
-    color: white;
     display: block; 
     display: flex;
     justify-content: space-between;
     min-height: 120px;
     padding: 20px;
+   
+}
+main > header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("images/talking_heads-speaking_in_tongues.png")  center / cover no-repeat;
+    filter: brightness(0.5);
 }
 #album_cover img {
     height:130px;
@@ -61,10 +70,11 @@ main header {
 }
 #artist_info > h1 {
     color: var(--yellow);
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 0 6px;
 }
 #artist_info h2 {
+    color: white;
     font-size: 20px;
     margin: 5px 0;
 }
@@ -74,6 +84,8 @@ main header {
     margin: 5px 0;
     padding-top: 10px;
 }
+
+/*Lyrics and Info*/
 main > article {
     display: grid;
     gap: 32px;
@@ -85,6 +97,7 @@ main > article {
 }
 #lyrics h2 {
     background-color: var(--yellow);
+    color: var(--gray);
     display: table;
     font-size: 30px;
     font-weight: normal;
@@ -93,7 +106,8 @@ main > article {
     text-transform: uppercase;
 }
 #lyrics p {
-    border-left: 3px solid var(--yellow);
+    color: gray;
+    border-left: 2px solid var(--yellow);
     line-height: 1.2;
     margin: 0;
     padding-left: 10px;
@@ -130,3 +144,15 @@ main > article {
     padding-left: 30px;
     padding-right: 30px;
 }
+#about > blockquote a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+body > footer {
+    margin-top: 24px;
+    padding: 32px 16px;
+    border-top: 3px solid var(--yellow);
+    text-align: center;
+    font-size: 0.7rem;
+
+} 
