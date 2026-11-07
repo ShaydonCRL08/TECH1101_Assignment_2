@@ -8,7 +8,7 @@
 body {
     color: gray;
     font-family: Arial, sans-serif;
-    max-width: 1100px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 6px;
 }
@@ -97,7 +97,36 @@ main > article {
     line-height: 1.2;
     margin: 0;
     padding-left: 10px;
+    padding-top: 10px;
 }
 #lyrics section:nth-child(even) {
     margin-left: 15%;
+}
+#about {
+    background: var(--gray);
+    color: white;
+    font-size: 0.85rem;
+}
+#about h2 {
+    background: var(--yellow);
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px;
+    text-transform: uppercase;
+}
+#about p,
+#about blockquote {
+    font-size: 15px;
+}
+#about p {
+    margin: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#about blockquote {
+    margin-left: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
