@@ -43,7 +43,7 @@ nav ul {
 /*The Banner*/
 main header {
     align-items: center;
-    background: url("./images/talking_heads-speaking_in_tongues.png") center / cover no-repeat;
+    background: #17242c url("./images/talking_heads-speaking_in_tongues.png") center / cover no-repeat;
     color: white;
     display: block; 
     display: flex;
@@ -52,7 +52,6 @@ main header {
     padding: 20px;
 }
 #album_cover img {
-    
     height:130px;
     object-fit: cover;
     width: 130px;
@@ -70,10 +69,10 @@ main header {
     margin: 5px 0;
 }
 #artist_info h3 {
+    color: lightgray;
     font-size: 17px;
     margin: 5px 0;
     padding-top: 10px;
-    
 }
 main > article {
     display: grid;
@@ -92,6 +91,13 @@ main > article {
     margin: 0 0 8px;
     padding: 10px;
     text-transform: uppercase;
-    
 }
-
+#lyrics p {
+    border-left: 3px solid var(--yellow);
+    line-height: 1.2;
+    margin: 0;
+    padding-left: 10px;
+}
+#lyrics section:nth-child(even) {
+    margin-left: 15%;
+}
