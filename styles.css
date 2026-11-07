@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    color: gray;
+    color: var(--gray);
     font-family: Arial, sans-serif;
     max-width: 1050px;
     margin: 0 auto;
@@ -42,23 +42,22 @@ nav ul {
 
 /*The Banner*/
 main header {
-    position: relative;
-    isolation: isolate;
     align-items: center;
     display: block; 
     display: flex;
+    isolation: isolate;
     justify-content: space-between;
     min-height: 120px;
+    position: relative;
     padding: 20px;
-   
 }
 main > header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
     background: url("images/talking_heads-speaking_in_tongues.png")  center / cover no-repeat;
-    filter: brightness(0.5);
+    content: "";
+    filter: brightness(0.3);
+    inset: 0;
+    position: absolute;
+    z-index: -1;
 }
 #album_cover img {
     height:130px;
@@ -93,7 +92,7 @@ main > article {
     padding: 22px;
 }
 #lyrics section{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 #lyrics h2 {
     background-color: var(--yellow);
@@ -101,17 +100,17 @@ main > article {
     display: table;
     font-size: 30px;
     font-weight: normal;
-    margin: 0 0 8px;
-    padding: 10px;
+    margin: 0;
+    padding: 15px;
     text-transform: uppercase;
 }
 #lyrics p {
     color: gray;
-    border-left: 2px solid var(--yellow);
+    border-left: 3px solid var(--yellow);
     line-height: 1.2;
     margin: 0;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 #lyrics section:nth-child(even) {
     margin-left: 15%;
@@ -119,12 +118,12 @@ main > article {
 #about {
     background: var(--gray);
     color: white;
-    font-size: 0.85rem;
+    font-size: 16px;
 }
 #about h2 {
     background: var(--yellow);
     color: var(--gray);
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
     padding: 12px;
@@ -148,11 +147,15 @@ main > article {
     color: var(--yellow);
     text-decoration: none;
 }
+
+/*The Bottom With The Source*/    
 body > footer {
+    border-top: 4px solid var(--yellow);
+    font-size: 13px;
     margin-top: 24px;
     padding: 32px 16px;
-    border-top: 3px solid var(--yellow);
     text-align: center;
-    font-size: 0.7rem;
-
 } 
+footer a {
+    background-color: var(--yellow)
+}
