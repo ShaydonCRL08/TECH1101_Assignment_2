@@ -1,8 +1,6 @@
 :root {
     --yellow: yellow;
-
 }
-
 * {
     box-sizing: border-box;
 }
@@ -27,6 +25,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 17px;
 }
 nav ul {
     display: flex;
@@ -38,18 +37,45 @@ nav ul {
 }
 main header {
     align-items: center;
-    background: gray url("./images/talking_heads-speaking_in_tongues.png") center / cover no-repeat;
+    background: url("./images/talking_heads-speaking_in_tongues.png") center / cover no-repeat;
     color: white;
     display: flex;
     justify-content: space-between;
     margin-top: 4px;
-    min-height: 140px;
+    min-height: 120px;
     padding: 20px;
 }
-
+#album_cover img {
+    background: rgba(128, 128, 128, 0.5);
+    display: block;
+    height:130px;
+    object-fit: cover;
+    width: 130px;
+}
+#artist_info {
+    text-transform: uppercase;
+}
 #artist_info > h1 {
     color: var(--yellow);
     font-size: 30px;
-
+    margin: 0 0 6px;
+}
+#artist_info h2 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+#artist_info h3 {
+    font-size: 17px;
+    margin: 5px 0;
+    
+}
+main > article {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: minmax(0, 2fr) minmax(200px, 1fr);
+    padding: 22px;
+}
+#lyrics section{
+    margin-bottom: 16px;
 }
 
